@@ -40,3 +40,31 @@ headerTitle.innerHTML= '<h3>Hello </h3>'
 
 headerTitle.style.borderBottom='solid 3px #000';
 
+// get elements by class name 
+
+var items = document.getElementsByClassName('list-group-item');
+console.log(items);
+console.log(items[1]);
+items[1].textContent = 'Hello 2';
+items[1].style.fontWeight = 'bold';
+items[1].style.backgroundColor =' yellow';
+
+//items.style.backgroundColor ='yellow'; // not gonaa work hence using for loop 
+
+for (var i=0; i < items.length; i++){
+    items[i].style.backgroundColor ='#f4f4f4';
+
+}
+// items 3 background color green 
+items[2].style.backgroundColor ='green';
+
+// changing the font 
+for (var i=0; i < items.length; i++){
+    items[i].style.fontWeight='bold';
+
+}
+
+
+
+
+
