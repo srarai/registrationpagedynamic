@@ -13,6 +13,7 @@ function btnClicked(e) {
 		amountText,
 		descriptionText,
 		categText,
+		clothes,
 	};
 
 	localStorage.setItem(amountText, JSON.stringify(obj));
