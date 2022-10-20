@@ -21,7 +21,7 @@ function createPost(post,callback){
     setTimeout(()=>{
         posts.push({...post, createdAt: new Date().getTime()});
         callback()
-    },1000)
+    },2000)
 }
 
 createPost({title:'Post Three', body: 'This is Post Three'},getPost);
